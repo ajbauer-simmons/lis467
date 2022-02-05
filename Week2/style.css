@@ -1,0 +1,29 @@
+body {
+    background-color: #D9FDFD;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+h1, p {
+    padding: 5px 20px;
+    text-align: center;
+}
+
+.cat_photos {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 20px;
+}
+
+.cat_photos img {
+    width: 400px;
+    padding: 10px 20px;
+}
+
+@media only screen and (min-width: 600px) {
+    h1, p, div {
+        max-width: 75%;
+        margin: 0 auto;
+    }
+}
