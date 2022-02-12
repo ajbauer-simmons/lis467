@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Bauer Bootstrap 4 Example</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/js/bootstrap.bundle.min.js"></script>
+    <style>
+    .fakeimg {
+        height: 200px;
+        background: #aaa;
+    }
+    #about, #opinions, #post1, #post2, #sayings {
+        padding-top: 50px;
+    }
+    .alternate {
+        background: #343a40;
+        color: white;
+    }
+    </style>
+</head>
+<body>
+
+    <div class="jumbotron text-center" style="margin-bottom:0">
+        <h1>Avi Bauer Uses Bootstrap</h1>
+        <p>This is practice for LIS467, Spring 2022!</p> 
+    </div>
+
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+        <a class="navbar-brand" href="#">Bauer</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="collapsibleNavbar">
+            <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#opinions">Opinions</a>
+            </li>
+            <!-- Dropdown -->
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown">
+                Posts
+                </a>
+                <div class="dropdown-menu">
+                    <a class="dropdown-item" href="#post1">Most Recent</a>
+                    <a class="dropdown-item" href="#post2">Previous</a>
+                </div>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#sayings">Gallery</a>
+            </li>    
+            </ul>
+        </div>  
+    </nav>
+
+    <div class="container" style="margin-top:30px">
+    <div class="row">
+        <div class="col-sm-4">
+            <div id="about"></div>
+            <h2>About Me</h2>
+            <img src="baby_spiderman.jpg" alt="Spiderman wearing a baby bonnet and tucked in a baby cradle, with the text 'Yes, and here's how!'" class="img-fluid">
+            <p>Okay, so this isn't a picture of me. But it's my favourite Spider-Man comics panel, so you're still learning something about me.</p>
+            <h3 id="opinions">Some Opinions</h3>
+            <p>Wonder what I think about dumb stuff?</p>
+            <div id="accordion" class="text-white">
+                <div class="card bg-success rounded-0">
+                <div class="card-header">
+                    <a class="collapsed card-link text-white stretched-link" data-toggle="collapse" href="#collapseOne">
+                    Cats vs. Dogs
+                    </a>
+                </div>
+                <div id="collapseOne" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                    Why choose? Both are wonderful in their own peculiar ways.
+                    </div>
+                </div>
+                </div> 
+                <div class="card bg-info rounded-0">
+                <div class="card-header">
+                    <a class="collapsed card-link text-white stretched-link" data-toggle="collapse" href="#collapseTwo">
+                    Ice Cream Flavours
+                    </a>
+                </div>
+                <div id="collapseTwo" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                    Coffee Oreo is possibly the best ice cream on the planet. Anything with coffee or chocolate is pretty good tbh.
+                    </div>
+                </div>
+                </div>    
+                <div class="card bg-primary rounded-0">
+                <div class="card-header">
+                    <a class="collapsed card-link text-white stretched-link" data-toggle="collapse" href="#collapseThree">
+                    Pizza
+                    </a>
+                </div>
+                <div id="collapseThree" class="collapse" data-parent="#accordion">
+                    <div class="card-body">
+                    Taking the risk of ostracizing myself, I don't actually like pizza that much...
+                    </div>
+                </div>
+                </div>
+            
+            </div> 
+            <hr class="d-sm-none">
+        </div>
+
+        <div class="col-sm-8" id="photos">
+            <h2 id="post1">MEET MY CAT</h2>
+            <h5>The obligatory pet post, Feb 6, 2022</h5>
+            <div class="row">
+                <div class="col-6">
+                    <img src="cece1.jpg" alt="A black and white cat looking at the camera." class="img-fluid">
+                </div>
+                <div class="col-6">
+                    <img src="cece2.jpg" alt="A black and white cat looking to the side." class="img-fluid">
+                </div>
+            </div>
+            <p>Okay, actually my roommate's cat...</p>
+            <p>Anyway, this is Cece, formerly known as Cow Cat. She is a rescue, and was stuck at the shelter for over a year before getting adopted, mainly because she used to be a little jerk. (She's still a little bit of a jerk, but much better than she was.)</p>
+            <a href="#readMoreCat" data-toggle="collapse">Read More</a>
+            <div id="readMoreCat" class="collapse">
+            <p>I don't have anything else to say about Cece, really. She's very anxious, but really cuddly. If I'm on the couch, she'll insist to sit on my lap.</p>
+            </div> 
+            <br>
+            <h2 id="post2">GINGERBREAD HOUSE</h2>
+            <h5>Rounding out 2021, Dec 16, 2021</h5>
+            <img src="gingerbread.jpg" alt="Close-up of a simple gingerbread house." class="img-fluid">
+            <p>Made by my own hands!</p>
+            <p>To celebrate the holidays, my workplace gave each of us a gingerbread house kit, and we assembled them "together" over Zoom. Safe but fun!</p>
+        </div>
+    </div>
+    </div>
+    <div class="alternate">
+        <div class="container pb-5">
+            <h2 id="sayings">Gallery of Quotes and Sayings</h2>
+            <p>This is a collection of various quotes I like.</p>
+            <div class="card-columns">
+                <div class="card bg-primary">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Life is what happens when you're busy making other plans." (John Lennon)</p>
+                    </div>
+                </div>
+                <div class="card bg-danger">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Always remember that you are absolutely unique. Just like everyone else." (Margaret Mead)</p>
+                    </div>
+                </div>
+                <div class="card bg-warning text-dark">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Live for each second without hesitation." (Elton John)</p>
+                    </div>
+                </div>
+                <div class="card bg-success">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Life would be tragic if it weren't funny." (Stephen Hawking)</p>
+                    </div>
+                </div>
+                <div class="card bg-light text-dark">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Be wise, because the world needs wisdom. If you cannot be wise, pretend to be someone who is wise, and then just behave like they would." (Neil Gaiman)</p>
+                    </div>
+                </div>
+                <div class="card bg-info">
+                    <div class="card-body text-center">
+                        <p class="card-text">"Always forgive your enemies; nothing annoys them so much." (Oscar Wilde)</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="jumbotron text-center" style="margin-bottom:0">
+    <p>Footer</p>
+    </div>
+
+</body>
+</html>
