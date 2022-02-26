@@ -1,0 +1,62 @@
+body {
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+main {
+    width: 90%;
+    margin: 0 auto;
+}
+
+#description {
+    float: left;
+    width: 44%;
+    margin-right: 2%;
+}
+
+#flowers {
+    float: left;
+    width: 53%;
+    border-bottom: 10px solid #6eab23;
+    background: url(http://www.zomigi.com/demo/images/stem.png) repeat-y 59px 0;
+    position: relative;
+}
+
+#flowers-list {
+    margin: 0;
+    padding-top: 20px;
+    padding-left: 220px;
+}
+
+#flowers dt, #flowers dd {
+    margin: 0;
+}
+
+#flowers dt {
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 1.2em;
+}
+
+#flowers dd {
+    margin-bottom: 1em;
+}
+
+#flowers dd:last-child {
+    margin-bottom: 2em;
+}
+
+#flowers img {
+    position: absolute;
+}
+
+#flower1, #flower3, #flower4 {
+    left: 101px;
+}
+
+#flower2 {
+    left: 0px;
+}
+
+#flower5 {
+    left: 31px;
+}

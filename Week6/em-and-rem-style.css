@@ -1,0 +1,34 @@
+html {
+    font-size: calc(0.6em + 1vw);
+}
+
+.panel {
+    font-size: 1rem;
+    border: 1px solid #678;
+    border-radius: 0.3em;
+    overflow: hidden;
+}
+
+.panel-heading {
+    padding: 0.6em 1.2em;
+    background-color: #cde;
+    border-bottom: 1px solid #678;
+}
+
+.panel-heading h3 {
+    font-size: 1.25em;
+    margin: 0px;
+    letter-spacing: 0.03em;
+}
+
+.panel-body {
+    padding: 0.6em 1.2em;
+}
+
+.panel.large {
+    font-size: 1.2rem;
+}
+
+.panel.small {
+    font-size: 0.8rem;
+}
