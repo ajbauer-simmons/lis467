@@ -1,0 +1,18 @@
+Code in the Console
+1. Typing alert("This is an alert message") into the console creates a modal window with the string "moodle.simmons.edu says: This is an alert message" as its text, and an "OK" button to close the window.
+
+Variables
+5. We just reassigned the variable my_name to be a different value (the phrase "My name is " plus the former value of my_name). I can see how this could be confusing.
+6. After changing the value of my_name to prompt("Enter your name"), a modal window appeared with the text "moodle.simmons.edu says: Enter your name" followed by a text input field and an OK and a CANCEL button. After inputting my answer, that answer was logged to the console when I clicked OK.
+7. After reloading the page, trying to log my_name returned an error: "VM2884:1 Uncaught ReferenceError: my_name is not defined". When the window is refreshed, it clears all of the contents of the console, including any locally stored variables.
+
+Arrays
+2. When logging the departments array, I get the following:
+    (4) ['Reference', 'Instruction', 'Access', 'Systems']
+    0: "Reference"
+    1: "Instruction"
+    2: "Access"
+    3: "Systems"
+    length: 4
+    [[Prototype]]: Array(0)
+7. Capitalization matters for the include function; 'instruction' is not in departments, although 'Instruction' is.
