@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Testing Menu Dropdown</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="nav-accessible.js"></script>
+    <script src="https://kit.fontawesome.com/2e8aaa277d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="#"><img src="images/Hatch_logo_light.png" alt="Hatch Makerspace"></a>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="top-menu">
+                <li class="sub-menu">
+                    <a tabindex="0">Rules & Tools <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="#">Policies</a></li>
+                        <li class="sub-sub-menu">
+                            <a tabindex="0">Tools <i id="side-arrow" class="fas fa-angle-right"></i><i id="down-arrow" class="fas fa-angle-down"></i></a>
+                            <ul class="sub-sub-list">
+                                <li><a href="#">3D Printer</a></li>
+                                <li><a href="#">Laser Cutter</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Electronics & Robotics</a></li>
+                                <li><a href="#">Hand Tools</a></li>
+                                <li><a href="#">Arts & Crafts</a></li>
+                                <li><a href="#">Sewing & Textiles</a></li>
+                                <li><a href="#">Vinyl Cutter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="#">Events</a></li>
+                <li class="sub-menu">
+                    <a tabindex="0">Get Involved <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Youth Internship</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <section class="hours">
+                        <h2>HOURS</h2>
+                        <ul>
+                            <li>Sunday: 1-7pm</li>
+                            <li>Monday: Open for workshops</li>
+                            <li>Tuesday: 1-9pm</li>
+                            <li>Wednesday: 1-9pm</li>
+                            <li>Thursday: 1-9pm</li>
+                            <li>Friday: 1-9pm</li>
+                            <li>Saturday: 1-7pm</li>
+                        </ul>
+                    </section>
+                    <p>The Hatch Makerspace is free to use and open to everyone. Affectionately called Hatch, it is a workshop space stocked with tools, materials, and expertise so that community members can learn and create their own do-it-yourself projects. First opened at the Arsenal Mall in 2014, Hatch now resides at 20 Summer St, a five-minute walk from the Watertown Library.</p>
+                    <p>Hatch welcomes anyone with a desire to create; artists, crafters, engineers, families, hobbyists, and you! You can bring your own materials (ask us about paint, we have some limitations) and use our space to get a little messy. You can bring your ideas and brainstorm the next great gadget. Or come for the community atmosphere, most of our 40+ volunteers started their journey with one project and one visit. We are here to help you achieve your creative goals.</p>
+                    <img src="images/Hatch_1.jfif" alt="a wall with a large green sign that says HATCH">
+                    <p><em>Hatch is an initiative of the Watertown Free Public Library (WFPL) with support from the Watertown Community Foundation and the Watertown Free Public Library Building Committee. WFPL thanks the Residence at Watertown Square for generously hosting Hatch, free of charge, at their facility on 20 Summer Street. </em></p>
+                </div>
+            </div>
+        </section>
+        <section class="purple">
+            <div class="container">
+                <div class="profiles">
+                    <figure>
+                        <img src="images/blank-profile_1280.png" width="200" height="200" alt="grey sillouette">
+                        <figcaption>
+                            <strong>Amelia Young</strong><br>Hatch Coordinator
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/blank-profile_1280.png" width="200" height="200" alt="grey sillouette">
+                        <figcaption>
+                            <strong>Dammy</strong><br>Hatch Assistant
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <img src="images/blank-profile_1280.png" width="200" height="200" alt="grey sillouette">
+                        <figcaption>
+                            <strong>Serena Gauthier</strong><br>Hatch Assistant
+                        </figcaption>
+                    </figure>
+                    <figure>
+                        <a href="#"><img src="images/blank-profile_1280.png" width="200" height="200" alt="grey sillouette"></a>
+                        <a href="#">
+                            <figcaption>
+                                Learn more about our <strong>volunteer program</strong>!
+                            </figcaption>
+                        </a>
+                    </figure>
+                </div>
+                <p>Hatch is staffed by the Hatch Coordinator, the Hatch Assistant, and talented local volunteers. Staff and volunteers are available to assist with projects, orient new patrons to the makerspace, and also offer hands-on demonstrations to inspire new projects.</p>
+            </div>
+        </section>
+        <section class="orange">
+            <div class="container">
+                <div class="contact">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>Hatch Makerspace<br>
+                           20 Summer Street<br>
+                           Watertown, MA 02472
+                        </p>
+                        <p>Amelia Young, Hatch Coordinator<br>
+                           ayoung@watertown-ma.gov<br>
+                           781-795-2309
+                        </p>
+                    </div>
+                    <div>
+                        <h2>COVID Safety</h2>
+                        <p><strong>Capacity:</strong> 10 (including staff)</p>
+                        <p>Due to the current COVID surge, we are limiting the number of people inside Hatch at one time.</p>
+                        <p>Please practice social distancing and wear a well-fitting mask the entire time you are at Hatch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
