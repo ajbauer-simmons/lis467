@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events - Hatch Makerspace</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hatch_script.js"></script>
+    <script src="https://kit.fontawesome.com/2e8aaa277d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home.html"><img src="images/Hatch_logo_transp.png" alt="Hatch Makerspace home page"></a>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="top-menu">
+                <li class="sub-menu">
+                    <a tabindex="0">Rules & Tools <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="#">Policies</a></li>
+                        <li class="sub-sub-menu">
+                            <a tabindex="0">Tools <i id="side-arrow" class="fas fa-angle-right"></i><i id="down-arrow" class="fas fa-angle-down"></i></a>
+                            <ul class="sub-sub-list">
+                                <li><a href="#">3D Printer</a></li>
+                                <li><a href="#">Laser Cutter</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Electronics & Robotics</a></li>
+                                <li><a href="#">Hand Tools</a></li>
+                                <li><a href="#">Arts & Crafts</a></li>
+                                <li><a href="#">Sewing & Textiles</a></li>
+                                <li><a href="#">Vinyl Cutter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="sub-menu">
+                    <a tabindex="0">Get Involved <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="#">Volunteer</a></li>
+                        <li><a href="#">Youth Internship</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+    <main>
+        <section>
+            <div class="container">
+                <div class="intro">
+                    <p>Hatch offers hands-on workshops on topics ranging from embroidery to laser cutting. Anything you make at Hatch, you can take home with you (with a few notable exceptions). We love projects that give you a tangible outcome that is entirely yours! Hatch also hosts several special events every year. You can register for upcoming workshops and events online or by calling Hatch during open hours: <a href="tel:7817952309">781-795-2309</a>.</p>
+                    <p>Previous and upcoming events are listed below. Also see the <a href="https://reservations.watertownlib.org/events/all?field_category_tid%5B%5D=155">Watertown Free Public Library events calendar</a>.</p>
+                </div>
+            </div>
+        </section>
+        <section class="green">
+            <div class="container">
+                <div class="calendar">
+                    <h2>Workshops & Events</h2>
+                    <div class="cal_controls">
+                        <ul>
+                            <li class="active"><a class="all" tabindex="0">All Events</a></li>
+                            <li><a class="upcoming" tabindex="0">Upcoming Events</a></li>
+                            <li><a class="past" tabindex="0">Past Events</a></li>
+                        </ul>
+                    </div>
+                    <div class="cal_items">
+                        <figure class="2022-02-28">
+                            <img src="images/motherboard_small.png" alt="close-up of a computer motherboard">
+                            <figcaption>
+                                <h3>Build a PC (Via Zoom)</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar"></i> Monday, February 28, 2022, 7:00pm to 9:00pm
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> Virtual (Zoom)
+                                    </li>
+                                </ul>
+                                <a href="https://reservations.watertownlib.org/build-pc-zoom-0">Learn More & Register!</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="2022-03-07">
+                            <img src="images/sewing_machine_small.png" alt="close-up of a sewing machine">
+                            <figcaption>
+                                <h3>Introduction to the Sewing Machine</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar"></i> Monday, March 7, 2022, 5:00pm to 7:00pm
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> Hatch Makerspace, 20 Summer St, Watertown, MA 02472
+                                    </li>
+                                </ul>
+                                <a href="https://reservations.watertownlib.org/introduction-sewing-machine-3">Learn More & Register!</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="2022-03-14">
+                            <img src="images/quilt_small.png" alt="close-up of a quilt being sewed on a sewing machine">
+                            <figcaption>
+                                <h3>The Quilter's Connection: English Paper Piecing</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar"></i> Monday, March 14, 2022, 5:00pm to 7:00pm
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> Hatch Makerspace, 20 Summer St, Watertown, MA 02472
+                                    </li>
+                                </ul>
+                                <a href="https://reservations.watertownlib.org/quilters-connection-english-paper-piecing">Learn More & Register!</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="2022-03-21">
+                            <img src="images/wires_small.png" alt="wires and a voltmeter connected to a pinboard">
+                            <figcaption>
+                                <h3>Electronics 101</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar"></i> Monday, March 21, 2022, 7:00pm to 9:00pm
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> Hatch Makerspace, 20 Summer St, Watertown, MA 02472
+                                    </li>
+                                </ul>
+                                <a href="https://reservations.watertownlib.org/electronics-101">Learn More & Register!</a>
+                            </figcaption>
+                        </figure>
+                        <figure class="2022-03-28">
+                            <img src="images/quilt_small.png" alt="lose-up of a quilt being sewed on a sewing machine">
+                            <figcaption>
+                                <h3>Quilter's Connection: Sew a Handmade Greeting Card</h3>
+                                <ul>
+                                    <li>
+                                        <i class="fas fa-calendar"></i> Monday, March 28, 2022, 7:00pm to 9:00pm
+                                    </li>
+                                    <li>
+                                        <i class="fas fa-map-marker-alt"></i> Hatch Makerspace, 20 Summer St, Watertown, MA 02472
+                                    </li>
+                                </ul>
+                                <a href="https://reservations.watertownlib.org/quilters-connection-sew-handmade-greeting-card">Learn More & Register!</a>
+                            </figcaption>
+                        </figure>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <section class="orange">
+            <div class="container">
+                <div class="contact">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>Hatch Makerspace<br>
+                           20 Summer Street<br>
+                           Watertown, MA 02472
+                        </p>
+                        <p>Amelia Young, Hatch Coordinator<br>
+                           ayoung@watertown-ma.gov<br>
+                           781-795-2309
+                        </p>
+                    </div>
+                    <div>
+                        <h2>COVID Safety</h2>
+                        <p><strong>Capacity:</strong> 10 (including staff)</p>
+                        <p>Due to the current COVID surge, we are limiting the number of people inside Hatch at one time.</p>
+                        <p>Please practice social distancing and wear a well-fitting mask the entire time you are at Hatch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="footer">
+                    <a href="https://www.watertownlib.org/"><img src="images/WPL.png" alt="Watertown Free Public Library"></a>
+                    <div>
+                        <p>The Hatch Makerspace is a project of the <strong>Watertown Free Public Library</strong>.</p>
+                        <p>123 Main Street<br>
+                           Watertown, Massachusetts 02472<br>
+                           Phone: <a href="tel:6179726431">617-972-6431</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body>
+</html>

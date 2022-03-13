@@ -4,10 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testing Menu Dropdown</title>
+    <title>Hatch Makerspace</title>
     <link rel="stylesheet" href="style.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="nav-accessible.js"></script>
+    <script src="hatch_script.js"></script>
     <script src="https://kit.fontawesome.com/2e8aaa277d.js" crossorigin="anonymous"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -16,7 +16,7 @@
 <body>
     <header>
         <div class="container">
-            <a href="#"><img src="images/Hatch_logo_light.png" alt="Hatch Makerspace"></a>
+            <a href="home.html"><img src="images/Hatch_logo_transp.png" alt="Hatch Makerspace home page"></a>
         </div>
     </header>
     <nav>
@@ -42,7 +42,7 @@
                     </ul>
                 </li>
                 <li><a href="#">Visit</a></li>
-                <li><a href="#">Events</a></li>
+                <li><a href="events.html">Events</a></li>
                 <li class="sub-menu">
                     <a tabindex="0">Get Involved <i class="fas fa-angle-down"></i></a>
                     <ul class="sub-list">
@@ -73,10 +73,19 @@
                     </section>
                     <p>The Hatch Makerspace is free to use and open to everyone. Affectionately called Hatch, it is a workshop space stocked with tools, materials, and expertise so that community members can learn and create their own do-it-yourself projects. First opened at the Arsenal Mall in 2014, Hatch now resides at 20 Summer St, a five-minute walk from the Watertown Library.</p>
                     <p>Hatch welcomes anyone with a desire to create; artists, crafters, engineers, families, hobbyists, and you! You can bring your own materials (ask us about paint, we have some limitations) and use our space to get a little messy. You can bring your ideas and brainstorm the next great gadget. Or come for the community atmosphere, most of our 40+ volunteers started their journey with one project and one visit. We are here to help you achieve your creative goals.</p>
-                    <img src="images/Hatch_1.jfif" alt="a wall with a large green sign that says HATCH">
-                    <p><em>Hatch is an initiative of the Watertown Free Public Library (WFPL) with support from the Watertown Community Foundation and the Watertown Free Public Library Building Committee. WFPL thanks the Residence at Watertown Square for generously hosting Hatch, free of charge, at their facility on 20 Summer Street. </em></p>
                 </div>
             </div>
+        </section>
+        <section class="pic_section">      
+            <figure>
+                <img class="img_slide" src="images/Hatch_1.png" alt="a wall with a large green sign that says HATCH">
+                <img class="img_slide" src="images/Hatch_2.png" alt="a person demonstrating how to sew a book binding">
+                <img class="img_slide" src="images/Hatch_3.png" alt="a person holding an electric hand drill">
+                <img class="img_slide" src="images/Hatch_4.png" alt="two people sewing masks at a table">
+                <figcaption>
+                    <p><em>Hatch is an initiative of the Watertown Free Public Library (WFPL) with support from the <a href="https://www.watertownfoundation.org/">Watertown Community Foundation</a> and the Watertown Free Public Library <a href="https://www.watertownlib.org/179/Support-the-WFPL">Building Committee</a>. WFPL thanks the Residence at Watertown Square for generously hosting Hatch, free of charge, at their facility on 20 Summer Street.</em></p>
+                </figcaption>
+            </figure>
         </section>
         <section class="purple">
             <div class="container">
@@ -111,6 +120,8 @@
                 <p>Hatch is staffed by the Hatch Coordinator, the Hatch Assistant, and talented local volunteers. Staff and volunteers are available to assist with projects, orient new patrons to the makerspace, and also offer hands-on demonstrations to inspire new projects.</p>
             </div>
         </section>
+    </main>
+    <footer>
         <section class="orange">
             <div class="container">
                 <div class="contact">
@@ -134,6 +145,19 @@
                 </div>
             </div>
         </section>
-    </main>
+        <section>
+            <div class="container">
+                <div class="footer">
+                    <a href="https://www.watertownlib.org/"><img src="images/WPL.png" alt="Watertown Free Public Library"></a>
+                    <div>
+                        <p>The Hatch Makerspace is a project of the <strong>Watertown Free Public Library</strong>.</p>
+                        <p>123 Main Street<br>
+                           Watertown, Massachusetts 02472<br>
+                           Phone: <a href="tel:6179726431">617-972-6431</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
 </body>
 </html>
