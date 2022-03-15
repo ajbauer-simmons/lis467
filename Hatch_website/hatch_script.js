@@ -67,7 +67,7 @@ function img_carousel() {
         // console.log(slideIndex);
 
         // make single slide visible
-        $(".img_slide:nth-of-type(" + (slideIndex) + ")").css({"display":"block"});
+        $(".img_slide:nth-of-type(" + slideIndex + ")").css({"display":"block"});
 
         setTimeout(img_carousel, 5000); // Change image every 5 seconds
     }
@@ -75,10 +75,26 @@ function img_carousel() {
 
 // make events filters
 function events_cal() {
+
+    // check today's date
+    var today = Date.now();
+    var day = Math.floor(today / (1000 * 60 * 60 * 24));
+    //console.log(today);
+
+    // add upcoming and past tags
+    $(".cal_items figure").each(function() {
+        var event_date = new Date($(this).attr("class"));
+        var event_day = event_date / (1000 * 60 * 60 * 24);
+        if (event_day < day) {
+            $(this).addClass("past");
+        } else {
+            $(this).addClass("upcoming");
+        }
+    })
     
-    //check if controls exist
+    // check if controls exist
     if ($(".cal_controls").length > 0) {
-        console.log("controls found")
+        //console.log("controls found")
 
         $(".cal_controls .all").click(function() {
             // show all

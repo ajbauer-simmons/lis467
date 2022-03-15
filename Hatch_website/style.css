@@ -176,7 +176,7 @@ section {
 
 .cal_controls ul {
 	display: flex;
-	gap: 2em;
+	gap: 1em;
 	margin: 2em 0;
 	padding: 0;
 }
@@ -323,7 +323,7 @@ section {
 	} 
 
 	header img {
-		width: 300px;
+		width: 400px;
 	}
 
 	nav {
@@ -427,13 +427,8 @@ section {
 @media screen and (min-width: 800px) {
 	
 	/* Header, Nav */
-	
-	header .container {
-		justify-content: flex-start;
-	}
-	
-	.top-menu {
-		justify-content: flex-end;
+	nav li {
+		padding: 1em;
 	}
 	
 	/* Picture Section */
