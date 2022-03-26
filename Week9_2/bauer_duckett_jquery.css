@@ -1,0 +1,55 @@
+/* Avi Bauer, LIS467, 3/26/2022 */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    padding: 1em;
+    background-color: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    position: relative;
+    list-style: none;
+    padding: 1em;
+    max-width: 20em;
+    border: 1px solid black;
+    background-color: #eb8b3d;
+}
+
+.hot {
+    background-color: #eb4c3b;
+}
+
+.cool {
+    background-color: #3ae8d1;
+}
+
+.complete {
+    background-color: #adadad;
+}
+
+.icon {
+    display: inline-block;
+    position: absolute;
+    left: 18em;
+}
+
+#notes {
+    background-color: white;
+    max-width: 18rem;
+    color: black;
+    font-size: .75rem;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 1rem;
+}
