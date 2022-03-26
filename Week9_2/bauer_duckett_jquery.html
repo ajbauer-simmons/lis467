@@ -9,11 +9,32 @@
     <link rel="stylesheet" href="bauer_duckett_jquery.css">
     <script src="jquery-3.6.0.js"></script>
     <script src="bauer_duckett_jquery.js"></script>
+    <script>
+        function inverter() {
+            // switch button text
+            var button = document.getElementById("switch");
+            if (button.innerText == "Go Cool") {
+                button.innerText = "Go Hot";
+                // lis = document.getElementsByClassName("hot");
+            } else {
+                button.innerText = "Go Cool";
+                // lis = document.getElementsByClassName("cool")
+            }
+            // toggle hot and cool classes
+            var lis = document.querySelectorAll(".hot,.cool");
+            for (let i = 0; i < lis.length; i++) {
+                lis[i].classList.toggle("hot");
+                lis[i].classList.toggle("cool");
+            }
+            
+        }
+    </script>
 </head>
 <body>
     <div id="page">
         <h1 id="header">List</h1>
         <h2>Buy groceries</h2>
+        <button id="switch" onclick="inverter()">Go Cool</button>
         <ul>
             <li id="one" class="hot"><em>fresh</em> figs</li>
             <li id="two" class="hot">pine nuts</li>

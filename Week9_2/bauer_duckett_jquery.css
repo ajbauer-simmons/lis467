@@ -32,10 +32,12 @@ li {
 
 .cool {
     background-color: #3ae8d1;
+    color: black;
 }
 
 .complete {
     background-color: #adadad;
+    color: white;
 }
 
 .icon {
@@ -52,4 +54,10 @@ li {
     padding: 1rem;
     margin: 1rem;
     border-radius: 1rem;
+}
+
+button {
+    padding: 1em;
+    margin-bottom: 1em;
+    font-family: 'Courier New', Courier, monospace;
 }
