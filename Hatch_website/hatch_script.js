@@ -5,11 +5,15 @@
 // add dropdown functionality to menu
 function menu_collapse() {
 
+    var $subMenu = $('.sub-menu>a,.sub-sub-menu>a');
+    var $container = $('.sub-list,.sub-sub-list');
+    var $menu = $('.sub-menu,.sub-sub-menu');
+
     // collapse lists
     $('.sub-list,.sub-sub-list').css({'display':'none'});
 
     // toggle visibility on click
-    $('.sub-menu>a,.sub-sub-menu>a').click(function() {
+    $subMenu.click(function() {
         if ($(this).next().css('display') == 'none') {
             //console.log('show');
             $(this).next().css({'display':'block'});
@@ -22,14 +26,36 @@ function menu_collapse() {
         
     });
 
+    // when focused, dropdowns open on Enter key press
+    $subMenu.keypress(function(event){
+        if(event.keyCode == 13){
+          $(this).click();
+        }
+    });
+
     // close menus if click anywhere else
     $(document).click(function(event) {
-        var container = $('.sub-list,.sub-sub-list');
-        var menu = $('.sub-menu,.sub-sub-menu');
-        if ((!container.is(event.target) && !container.has(event.target).length) && (!menu.is(event.target) && !menu.has(event.target).length)) {
+        if ((!$container.is(event.target) && !$container.has(event.target).length) && (!$menu.is(event.target) && !$menu.has(event.target).length)) {
             //console.log("doc hide");
-            container.css({'display':'none'});
+            $container.css({'display':'none'});
+            $subMenu.css({'color':'white'});
         }
+    });
+
+    // fix sticky font colors
+    $subMenu.hover(function(){
+        $(this).css({'color':'black'});
+        $(this).parent().css({'background-color':'#ffd4bd'});
+    }, function() {
+        $(this).css({'color':'white'});
+        $(this).parent().css({'background-color':'#ec743c'});
+    });
+    $subMenu.focusin(function(){
+        $(this).css({'color':'black'});
+        $(this).parent().css({'background-color':'#ffd4bd'});
+    }).focusout( function() {
+        $(this).css({'color':'white'});
+        $(this).parent().css({'background-color':'#ec743c'});
     });
 }
 
@@ -55,13 +81,13 @@ var slideIndex = 0;
 function img_carousel() {
 
     // hide slides
-    var slides = $(".img_slide");
-    slides.css({"display":"none"});
+    var $slides = $(".img_slide");
+    $slides.css({"display":"none"});
 
-    if (slides.length > 0) {
+    if ($slides.length > 0) {
         // update slide index
         slideIndex++;
-        if (slideIndex > slides.length) {
+        if (slideIndex > $slides.length) {
             slideIndex = 1;
         }
         // console.log(slideIndex);

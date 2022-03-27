@@ -56,6 +56,15 @@ header a, nav a {
 	cursor: pointer;
 }
 
+
+nav li:hover, nav li:focus-within {
+	background-color: #ffd4bdff;
+}
+
+nav li:hover>a, nav li:focus-within>a {
+	color: black;
+}
+
 /* content sections */
 
 section {
@@ -119,7 +128,7 @@ section {
 .pic_section .img_slide:first-child {
 	display: block;
 }
-
+/*
 .pic_section figcaption {
 	padding: 1em 2em;
 	background-color: rgba(20, 75, 142, 1);
@@ -129,6 +138,7 @@ section {
 .pic_section a {
 	color: white;
 }
+*/
 
 /* Profiles */
 
@@ -329,14 +339,6 @@ section {
 	nav {
 		padding-bottom: 0;
 	}
-	
-	nav li:hover {
-		background-color: #ffd4bdff;
-	}
-
-	nav li:hover>a {
-		color: black;
-	}
 
 	.top-menu {
 		display: flex;
@@ -365,13 +367,6 @@ section {
 	.sub-list li {
 		min-width: 10em;
 		background-color: #ec743c;
-	}
-
-	.sub-menu:hover .sub-list, 
-	.sub-sub-menu:hover .sub-sub-list, 
-	.sub-menu:focus-within .sub-list, 
-	.sub-sub-menu:focus-within .sub-sub-list {
-		display: block;
 	}
 
 	/* Hours */
@@ -432,7 +427,7 @@ section {
 	}
 	
 	/* Picture Section */
-	
+	/*
 	.pic_section figcaption {
 		position: absolute;
 		right: 0;
@@ -444,7 +439,7 @@ section {
 		display: flex;
 		align-items: center;
 	}
-
+	*/
 	/* Contact */
 	.contact {
 		grid-template-columns: 365px 1fr;
