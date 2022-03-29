@@ -1,6 +1,6 @@
 // Avi Bauer
 // baueraj@simmons.edu
-// last modified: March 13 2022
+// last modified: March 27 2022
 
 // add dropdown functionality to menu
 function menu_collapse() {

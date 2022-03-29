@@ -1,3 +1,5 @@
+/* Avi Bauer, LIS467 SP22 */
+
 * {
 	box-sizing: border-box;
 }
@@ -80,7 +82,11 @@ section {
 }
 
 .green {
-	background: #bfffce;
+	background-color: #bfffce;
+}
+
+.green a, .orange a, .purple a {
+	color: black;
 }
 
 /* Hours */
@@ -196,7 +202,7 @@ section {
 	margin: 0;
 	list-style-type: none;
 	background-color: #6fae80;
-	border: 3px solid #bfffce;
+	border: 3px solid #fcfaf8;
 }
 
 .cal_controls li.active {
@@ -204,7 +210,7 @@ section {
 }
 
 .cal_controls li:hover {
-	background-color: #bfffce;
+	background-color: #fcfaf8;
 	border: 3px solid #6fae80;
 }
 
@@ -241,7 +247,7 @@ section {
 }
 
 .cal_items figcaption {
-	background-color: #fcfaf8;
+	background-color: #bfffce;
 	padding: 1em;
 	display: flex;
 	flex-flow: column nowrap;
@@ -278,7 +284,7 @@ section {
 }
 
 .cal_items a:hover {
-	background-color: #fcfaf8;
+	background-color: #bfffce;
 	color: black;
 }
 
