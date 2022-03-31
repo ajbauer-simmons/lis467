@@ -111,8 +111,7 @@ section {
 /* Picture Section */
 
 .pic_section {
-	padding: 0;
-	margin: 0;
+	padding-top: 0;
 	display: flex;
 	justify-content: center;
 }

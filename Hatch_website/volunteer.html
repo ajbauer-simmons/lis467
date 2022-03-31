@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Volunteer - Hatch Makerspace</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="vol_intern.css">
+    <link rel="icon" type="image/x-icon" href="images/Hatch_favicon.png">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="hatch_script.js"></script>
+    <script src="https://kit.fontawesome.com/2e8aaa277d.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&family=Roboto+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <a href="home.html"><img src="images/Hatch_logo_transp.png" alt="Hatch Makerspace home page"></a>
+        </div>
+    </header>
+    <nav>
+        <div class="container">
+            <ul class="top-menu">
+                <li class="sub-menu">
+                    <a tabindex="0">Rules & Tools <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="#">Policies</a></li>
+                        <li class="sub-sub-menu">
+                            <a tabindex="0">Tools <i id="side-arrow" class="fas fa-angle-right"></i><i id="down-arrow" class="fas fa-angle-down"></i></a>
+                            <ul class="sub-sub-list">
+                                <li><a href="#">3D Printer</a></li>
+                                <li><a href="#">Laser Cutter</a></li>
+                                <li><a href="#">Laptops</a></li>
+                                <li><a href="#">Electronics & Robotics</a></li>
+                                <li><a href="#">Hand Tools</a></li>
+                                <li><a href="#">Arts & Crafts</a></li>
+                                <li><a href="#">Sewing & Textiles</a></li>
+                                <li><a href="#">Vinyl Cutter</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">Visit</a></li>
+                <li><a href="events.html">Events</a></li>
+                <li class="sub-menu">
+                    <a tabindex="0">Get Involved <i class="fas fa-angle-down"></i></a>
+                    <ul class="sub-list">
+                        <li><a href="volunteer.html">Volunteer</a></li>
+                        <li><a href="internships.html">Youth Internship</a></li>
+                        <li><a href="#">Collaborations</a></li>
+                        <li><a href="#">Donate</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </nav>
+   
+    <main>  
+        <section>    
+            <div class="container">
+                <div class="intro">
+                    <h1>Volunteer</h1>            
+                    <blockquote>
+                        "Hatch is more than a room full of tools, it is more like a state of mind. It is a place of sharing and cooperation." <br>
+                        <b>— Danny Lawrence, Hatch Volunteer Since 2016</b> 
+                    </blockquote>
+                    <img src="https://www.watertownlib.org/ImageRepository/Document?documentId=3017" alt="Photo of approx. 20 people gathered in a workshop room, posed for the camera.">
+                    <h2>Volunteers Are the Heart of Hatch Makerspace</h2>
+                    <p>Hatch couldn't exist without the help of dedicated volunteers who bring their skill and passion to the makerspace. Volunteers must possess passion for making (whatever form that takes for you), a desire to learn, and a willingness to help others achieve their creative goals.</p>
+                    <h3>Time Commitment</h3>
+                    <p>All Hatch volunteers must be able to commit to at least one 3 hour volunteer shift per month.</p>
+                    <h3>Requirements</h3>
+                    <p>Because the volunteer role is very independent, Hatch volunteers must be over 18 years old. All volunteers must pass a CORI background check and complete orientation training with the Hatch Coordinator.</p>
+                    <h3>Current Needs</h3>
+                    <p>We're looking for new volunteers to help during any open hours. If you can commit to helping during those hours at least once a month, apply today!</p>  
+                </div>
+            </div>
+        </section>
+        <!-- "become a volunteer" with link to volunteer form-->
+
+        <section class=vollink>        
+            <a href="https://www.watertownlib.org/FormCenter/Watertown-Free-Public-Library-4/Hatch-Volunteer-Interest-Form-66" target="_blank" rel="noreferrer noopener">
+                <div class="button" >    
+                    Ready to volunteer? Click here to apply.
+                </div>
+            </a>
+        </section>        
+
+        <!-- 3 volunteer testimonials - scrolling menu-->
+            
+        <!-- modified from https://www.w3schools.com/howto/howto_js_quotes_slideshow.asp-->
+            
+        <!-- Slideshow container -->
+        <section class="slideshow-container">
+
+            <!-- Full-width slides/quotes -->
+            <blockquote class="mySlides">
+                I boiled it down to one thing - connection. Making is all about connections between the abstract and the concrete; between people and things; between people and other people and THEIR ideas. Everything goes around in this circle and Hatch is right there in the middle.<br>
+                <b>— Cheryl Moreau, Hatch Volunteer since 2015</b>
+            </blockquote> <!-- end myslides -->
+
+            <!-- Moved this js call from the top of the file in order to make the first slide apepar as default --> <script src="Hatch.js"></script>
+                
+            <blockquote class="mySlides">
+                I am a Hatch true believer that the place has been and can be in the future an important community nexus.<br>
+                <b>— Seth Deitch, Hatch Volunteer since 2018</b>
+            </blockquote> <!-- end myslides -->
+
+            <blockquote class="mySlides">
+                Hatch is a community center for Watertown's geek community, as well as that of several surrounding cities and towns. But Hatch is more than a room full of tools, it is more like a state of mind. The volunteers are there because they want to be there. It is a place of sharing and cooperation. Many times after I have given someone the "nickel tour” they will say: wow, I didn't  think you could find a place like this in Watertown!<br>
+                <b>— Danny Lawrence, Hatch Volunteer since 2016</b>
+            </blockquote> <!-- end myslides -->
+
+            <!-- Next/prev buttons -->
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+            
+        </section> <!-- end slideshow-container -->
+
+        <!-- end volunteer testimonials -->
+    </main>
+    <footer>
+        <section class="orange">
+            <div class="container">
+                <div class="contact">
+                    <div>
+                        <h2>Contact</h2>
+                        <p>Hatch Makerspace<br>
+                        20 Summer Street<br>
+                        Watertown, MA 02472
+                        </p>
+                        <p>Amelia Young, Hatch Coordinator<br>
+                        ayoung@watertown-ma.gov<br>
+                        781-795-2309
+                        </p>
+                    </div>
+                    <div>
+                        <h2>COVID Safety</h2>
+                        <p><strong>Capacity:</strong> 10 (including staff)</p>
+                        <p>Due to the current COVID surge, we are limiting the number of people inside Hatch at one time.</p>
+                        <p>Please practice social distancing and wear a well-fitting mask the entire time you are at Hatch.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section>
+            <div class="container">
+                <div class="footer">
+                    <a href="https://www.watertownlib.org/"><img src="images/WPL.png" alt="Watertown Free Public Library"></a>
+                    <div>
+                        <p>The Hatch Makerspace is a project of the <strong>Watertown Free Public Library</strong>.</p>
+                        <p>123 Main Street<br>
+                        Watertown, Massachusetts 02472<br>
+                        Phone: <a href="tel:6179726431">617-972-6431</a></p>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </footer>
+</body> 
+</html>

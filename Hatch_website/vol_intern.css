@@ -1,0 +1,89 @@
+.intro img {
+    max-width: 100%;
+    padding: 1em 0;
+}
+
+.intro blockquote {
+    margin: 2em 0 1em 0;
+    padding: 2em 3em;
+    background-color: #d1c7e9;
+}
+
+/* Volunteer button */
+
+.vollink {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+/* Full width button */
+.button {
+    background-color: #bfffceff; 
+    border: none;
+    color: black;
+    padding: 1em 1rem;
+    font-family: 'Roboto Mono', bold, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+      
+  /* Change button color on hover */
+  .button:hover {
+    background-color: #6fae80; 
+    color: white;
+    transition: 0.5s; 
+} 
+
+/* Slideshow container */
+.slideshow-container {
+    display: block;
+    position: relative;
+    background: #d1c7e9ff;
+    min-height: 20em;
+    width: 100%;
+  }
+  
+/* Slides */
+.mySlides {
+    display: none;
+    max-width: 1230px;
+	margin: 0 auto;
+    padding: 6em 3em;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #3f2870;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #d1c7e9ff;
+}
