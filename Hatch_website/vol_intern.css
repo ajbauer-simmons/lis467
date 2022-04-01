@@ -3,8 +3,13 @@
     padding: 1em 0;
 }
 
-.intro blockquote {
-    margin: 2em 0 1em 0;
+.intro figure {
+    margin: 0 0 2em 0;
+    position: relative;
+}
+
+.intro figcaption {
+    margin: 0 0 1em 0;
     padding: 2em 3em;
     background-color: #d1c7e9;
 }
@@ -86,4 +91,15 @@
 .prev:hover, .next:hover {
     background-color: rgba(0,0,0,0.8);
     color: #d1c7e9ff;
+}
+
+@media screen and (min-width: 800px) {
+    .intro figcaption {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0.5em;
+		background-color: rgba(63, 40, 112, 0.7);
+		color: white;
+	}
 }
