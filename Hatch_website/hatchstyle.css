@@ -1,0 +1,604 @@
+/* Avi Bauer, LIS467 SP22 */
+
+* {
+	box-sizing: border-box;
+}
+
+html {
+	background-color: #fcfaf8;
+	font-family: 'Roboto Mono', monospace;
+	line-height: 1.6em;
+}
+
+body {
+	margin: 0;
+}
+
+/* Header, Nav */
+
+header, nav, h1, h2, h3 {
+	font-family: 'Bungee', cursive;
+	line-height: 1em;
+}
+
+h1 {
+	font-size: 2em;
+}
+
+header, nav {
+	background-color: #ec743c;
+	margin: 0;
+	padding: 2em;
+}
+
+header {
+	padding-bottom: 0;
+}
+
+header img {
+	width: 100%;
+}
+
+nav {
+	font-size: 1.25em;
+}
+
+nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+nav li {
+	padding: 10px;
+}
+
+header a, nav a {
+	text-decoration: none;
+	color: white;
+}
+
+.sub-menu>a, .sub-sub-menu>a {
+	cursor: pointer;
+}
+
+
+nav li:hover, nav li:focus-within {
+	background-color: #ffd4bdff;
+}
+
+nav li:hover>a, nav li:focus-within>a {
+	color: black;
+}
+
+/* content sections */
+
+section {
+	padding: 2em;
+}
+
+.purple {
+	background-color: #d1c7e9;
+}
+
+.orange {
+	background-color: #ffd4bd;
+}
+
+.green {
+	background-color: #bfffce;
+}
+
+.green a, .orange a, .purple a {
+	color: black;
+}
+
+/* Volunteer button */
+
+.vollink {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+.eventslink {
+    width: 100%;
+    display: block;
+    padding: 0;
+}
+
+/* Full width button */
+.button {
+    background-color: #bfffceff; 
+    border: none;
+    color: black;
+    padding: 1em 1rem;
+    font-family: 'Roboto Mono', bold, monospace;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    width: 100%;
+}
+      
+/* Change button color on hover */
+.button:hover {
+    background-color: #6fae80; 
+    color: white;
+    transition: 0.5s; 
+  }
+
+.toolimage {
+	float: left;
+	padding: 1.5em;
+	color: black;
+	line-height: 1.4em;
+}
+
+.toolimage h2 {
+	margin-top: 0px;
+}
+
+.toolimage ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+.toolimage2 {
+	float: right;
+	padding: 1.5em;
+	line-height: 1.4em;
+}
+
+/* Hours */
+
+.hours {
+	padding: 1.5em;
+	color: white;
+	background-color: #3f2870;
+	line-height: 1.4em;
+}
+
+.hours h2 {
+	margin-top: 0px;
+}
+
+.hours ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+
+/* Picture Section */
+
+.pic_section {
+	padding-top: 0;
+	display: flex;
+	justify-content: center;
+}
+
+.pic_section img {
+	max-width: 100%;
+	height: auto;
+}
+
+.pic_section figure {
+	margin: 0;
+	position: relative;
+}
+
+.pic_section .img_slide {
+	display: none;
+}
+
+.pic_section .img_slide:first-child {
+	display: block;
+}
+/*
+.pic_section figcaption {
+	padding: 1em 2em;
+	background-color: rgba(20, 75, 142, 1);
+	color: white;
+}
+
+.pic_section a {
+	color: white;
+}
+*/
+
+.intro img {
+    max-width: 100%;
+    padding: 1em 0;
+}
+
+.intro figure {
+    margin: 0 0 2em 0;
+    position: relative;
+}
+
+.intro figcaption {
+    margin: 0 0 1em 0;
+    padding: 2em 3em;
+    background-color: #d1c7e9;
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+/* Testimonials */
+
+/* Slideshow container */
+.slideshow-container {
+    display: block;
+    position: relative;
+    background: #d1c7e9ff;
+    min-height: 20em;
+    width: 100%;
+  }
+  
+/* Slides */
+.mySlides {
+    display: none;
+    max-width: 1230px;
+	margin: 0 auto;
+    padding: 6em 3em;
+    flex-flow: column nowrap;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    margin-top: -30px;
+    padding: 16px;
+    color: #3f2870;
+    font-weight: bold;
+    font-size: 20px;
+    user-select: none;
+}
+
+/* Position the "next button" to the right */
+.prev {
+    left: 0;
+    border-radius: 0 3px 3px 0;
+}
+
+.next {
+    position: absolute;
+    right: 0;
+    border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+    color: #d1c7e9ff;
+}
+
+.attribution {
+    align-self: flex-end;
+    font-weight: bold;
+}
+
+/* Profiles */
+
+.profiles {
+	display: flex;
+	flex-flow: row wrap;
+	justify-content: center;
+}
+
+.profiles figure {
+	width: min-content;
+}
+
+.profiles figcaption {
+	text-align: center;
+}
+
+.profiles a {
+	text-decoration: none;
+	color: black;
+}
+
+.profiles img {
+	border-radius: 50%;
+}
+
+/* Contact */
+
+.contact {
+	display: grid;
+	grid-template-columns: 100%; 
+	font-size: 1em;
+}
+
+.contact div:first-child {
+	border-bottom: 5px solid #ec743c;
+	padding-bottom: 2em;
+}
+
+.contact div:last-child {
+	margin-top: 2em;
+}
+
+/* Events Calendar */
+
+.cal_controls ul {
+	display: flex;
+	gap: 1em;
+	margin: 2em 0;
+	padding: 0;
+}
+
+.cal_controls li {
+	padding: 1em;
+	margin: 0;
+	list-style-type: none;
+	background-color: #6fae80;
+	border: 3px solid #fcfaf8;
+}
+
+.cal_controls li.active {
+	background-color: #144b8e;
+}
+
+.cal_controls li:hover {
+	background-color: #fcfaf8;
+	border: 3px solid #6fae80;
+}
+
+.cal_controls li.active:hover {
+	border: 3px solid #144b8e;
+}
+
+.cal_controls li:hover a {
+	color: black;
+}
+
+.cal_controls a {
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	padding: 1em 0;
+	cursor: pointer;
+}
+
+.cal_items {
+	display: flex;
+	flex-direction: column;
+	gap: 2em;
+}
+
+.cal_items figure {
+	margin: 0;
+	position: relative;
+}
+
+.cal_items img {
+	max-width: 100%;
+	height: auto;
+}
+
+.cal_items figcaption {
+	background-color: #bfffce;
+	padding: 1em;
+	display: flex;
+	flex-flow: column nowrap;
+	align-items: center;
+}
+
+.cal_items h3 {
+	font-size: 1.5em;
+	margin: 0;
+}
+
+.cal_items ul {
+	padding-left: 1.75em;
+}
+
+.cal_items li {
+	list-style-type: none;
+	position: relative;
+}
+
+.cal_items li i {
+	position: absolute;
+	left: -1.5em;
+	top: .25em;
+}
+
+.cal_items a {
+	padding: 1em;
+	background-color: #6fae80;
+	color: white;
+	text-decoration: none;
+	font-weight: bold;
+	border: 3px solid #6fae80;
+}
+
+.cal_items a:hover {
+	background-color: #bfffce;
+	color: black;
+}
+
+/* Footer */
+
+.footer {
+	display: flex;
+	flex-direction: column;
+	padding-top: 1em;
+}
+
+.footer img {
+	width: 360px;
+}
+
+
+@media screen and (max-width: 680px) {
+	/* Styling specific to the collapsed menu */
+	nav li {
+		padding-left: 0;
+	}
+
+	.sub-menu li {
+		margin-left: 1em;
+	}
+
+	nav li:first-child {
+		padding-top: 20px;
+	}
+
+	nav li, .sub-list li:first-child {
+		border-bottom: 3px solid white;
+	}
+
+	nav li:last-child {
+		border: none;
+	}
+
+}
+
+@media screen and (min-width: 680px) {
+	
+	/* Header, Nav */
+
+	header .container {
+		display: flex;
+		justify-content: center;
+	} 
+
+	header img {
+		width: 400px;
+	}
+
+	nav {
+		padding-bottom: 0;
+	}
+
+	.top-menu {
+		display: flex;
+		max-width: 100%;
+		justify-content: center;
+	}
+
+	.sub-menu, .sub-sub-menu {
+		position: relative;
+		/*display: inline-block;*/
+	}
+
+	.sub-list, .sub-sub-list {
+		display: none;
+		position: absolute;
+		z-index: 1;
+		right: 0;
+		top: 100%;
+	}
+
+	.sub-sub-list {
+		left: 100%;
+		top: 0;
+	}
+
+	.sub-list li {
+		min-width: 10em;
+		background-color: #ec743c;
+	}
+
+	/* Hours */
+	.hours {
+		width: max-content;
+		margin: 0 2em 1em 0;
+		float: left;
+	}
+
+	/* Contact */
+	.contact {
+		grid-template-columns: 1fr 1fr;
+	}
+	
+	.contact div:first-child {
+		border-bottom: none;
+		border-right: 5px solid #ec743c;
+		padding-right: 3em;
+		padding-bottom: 0;
+	}
+
+	.contact div:last-child {
+		margin-left: 4em;
+		margin-top: 0;
+	}
+
+	/* Events Calendar */
+
+	.cal_items {
+		flex-flow: row wrap;
+	}
+
+	.cal_items figure {
+		max-width: calc(50% - 1em);
+	}
+
+	.cal_items h3 {
+		align-self: flex-start;
+	}
+
+	/* Footer */
+
+	.footer {
+		flex-direction: row;
+	}
+
+	.footer img {
+		margin-right: 2em;
+	}
+
+}
+
+@media screen and (min-width: 800px) {
+	
+	/* Header, Nav */
+	nav li {
+		padding: 1em;
+	}
+	
+	/* Contact */
+	.contact {
+		grid-template-columns: 365px 1fr;
+	}
+
+	/* Picture caption */
+	.intro figcaption {
+		position: absolute;
+		right: 0;
+		left: 0;
+		bottom: 0.5em;
+		background-color: rgba(63, 40, 112, 0.7);
+		color: white;
+	}
+
+}
+
+@media screen and (min-width: 1200px) {
+
+	.container {
+		max-width: 1230px;
+		margin: 0px auto;
+	}
+
+	/* Picture Section */
+
+	.pic_secton p {
+		max-width: 1230px;
+
+	}
+
+	/* Events Calendar */
+
+	.cal_items figure {
+		max-width: calc(33% - 1.33em);
+	}
+}
