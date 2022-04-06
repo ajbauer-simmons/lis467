@@ -9,6 +9,8 @@ function menu_collapse() {
     var $container = $('.sub-list,.sub-sub-list');
     var $menu = $('.sub-menu,.sub-sub-menu');
 
+    var window_collapse = window.matchMedia('(min-width: 680px)');
+
     // collapse lists
     $('.sub-list,.sub-sub-list').css({'display':'none'});
 
@@ -17,11 +19,15 @@ function menu_collapse() {
         if ($(this).next().css('display') == 'none') {
             //console.log('show');
             $(this).next().css({'display':'block'});
-            $(this).css({'color':'black'});
+            if (window_collapse.matches) {
+                $(this).css({'color':'black'});
+            }
         } else {
             //console.log('hide');
             $(this).next().css({'display':'none'});
-            $(this).css({'color':'white'});
+            if (window_collapse.matches) {
+                $(this).css({'color':'white'});
+            }
         }
         
     });
@@ -43,20 +49,23 @@ function menu_collapse() {
     });
 
     // fix sticky font colors
-    $subMenu.hover(function(){
-        $(this).css({'color':'black'});
-        $(this).parent().css({'background-color':'#ffd4bd'});
-    }, function() {
-        $(this).css({'color':'white'});
-        $(this).parent().css({'background-color':'#ec743c'});
-    });
-    $subMenu.focusin(function(){
-        $(this).css({'color':'black'});
-        $(this).parent().css({'background-color':'#ffd4bd'});
-    }).focusout( function() {
-        $(this).css({'color':'white'});
-        $(this).parent().css({'background-color':'#ec743c'});
-    });
+
+    if (window_collapse.matches) {
+        $subMenu.hover(function(){
+            $(this).css({'color':'black'});
+            $(this).parent().css({'background-color':'#ffd4bd'});
+        }, function() {
+            $(this).css({'color':'white'});
+            $(this).parent().css({'background-color':'#ec743c'});
+        });
+        $subMenu.focusin(function(){
+            $(this).css({'color':'black'});
+            $(this).parent().css({'background-color':'#ffd4bd'});
+        }).focusout( function() {
+            $(this).css({'color':'white'});
+            $(this).parent().css({'background-color':'#ec743c'});
+        });
+    }
 }
 
 // change direction of caret  
@@ -151,4 +160,3 @@ $(document).ready(caret_switch);
 $(document).ready(img_carousel);
 $(document).ready(events_cal);
 $(window).resize(caret_switch);
-

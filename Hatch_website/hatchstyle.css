@@ -62,15 +62,6 @@ header a, nav a {
 	cursor: pointer;
 }
 
-
-nav li:hover, nav li:focus-within {
-	background-color: #ffd4bdff;
-}
-
-nav li:hover>a, nav li:focus-within>a {
-	color: black;
-}
-
 /* content sections */
 
 section {
@@ -127,13 +118,19 @@ section {
     background-color: #6fae80; 
     color: white;
     transition: 0.5s; 
-  }
+}
+
+
+/* Tools Section */
 
 .toolimage {
-	float: left;
-	padding: 1.5em;
 	color: black;
 	line-height: 1.4em;
+}
+
+.toolimage img {
+	max-width: 100%;
+	height: auto;
 }
 
 .toolimage h2 {
@@ -146,10 +143,31 @@ section {
 	padding: 0;
 }
 
+.toolimage li {
+	background-color: #3f2870;
+	padding: 0.5em 1em;
+	margin: 0.25em 0;
+}
+
+.toolimage a {
+	text-decoration: none;
+	color: white;
+	font-weight: bold;
+}
+
 .toolimage2 {
 	float: right;
 	padding: 1.5em;
 	line-height: 1.4em;
+}
+
+.toolimg {
+	max-width: 100%;
+	height: auto;
+}
+
+.toolequip {
+	padding: 1em 2em;
 }
 
 /* Hours */
@@ -462,6 +480,28 @@ section {
 
 }
 
+@media screen and (min-width: 580px) {
+	/* Tools Section */
+
+	.toolimage {
+		grid-row: 1 / 3;
+	}
+
+	.toolintro {
+		display: grid;
+		grid-template-columns: 1fr 2fr;
+		column-gap: 2em;
+	}
+
+	.tooltext h2 {
+		margin-top: 0;
+	}
+	
+	.toolequip {
+		padding: 2em;
+	}
+}
+
 @media screen and (min-width: 680px) {
 	
 	/* Header, Nav */
@@ -506,6 +546,14 @@ section {
 	.sub-list li {
 		min-width: 10em;
 		background-color: #ec743c;
+	}	
+
+	nav li:hover, nav li:focus-within {
+		background-color: #ffd4bdff;
+	}
+
+	nav li:hover>a, nav li:focus-within>a {
+		color: black;
 	}
 
 	/* Hours */
