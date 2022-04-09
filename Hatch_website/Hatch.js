@@ -1,3 +1,6 @@
+// Avi Bauer, Tess Schuster, Anna Cohen
+// LIS467, Spring 2022
+
 /* Slideshow carousel */
 var slideIndex = 1;
 showSlides(slideIndex);

@@ -1,6 +1,5 @@
-// Avi Bauer
-// baueraj@simmons.edu
-// last modified: March 27 2022
+// Avi Bauer, Tess Schuster, Anna Cohen
+// LIS467, Spring 2022
 
 // add dropdown functionality to menu
 function menu_collapse() {

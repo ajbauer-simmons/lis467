@@ -1,4 +1,5 @@
-/* Avi Bauer, LIS467 SP22 */
+/* Avi Bauer, Tess Schuster, Anna Cohen */
+/* LIS467, Spring 2022 */
 
 * {
 	box-sizing: border-box;
@@ -561,6 +562,12 @@ section {
 		width: max-content;
 		margin: 0 2em 1em 0;
 		float: left;
+	}
+
+	/* Image on Visit page */
+
+	.pic_section.container img {
+		padding-top: 0;
 	}
 
 	/* Contact */
