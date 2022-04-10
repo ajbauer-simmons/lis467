@@ -18,15 +18,9 @@ function menu_collapse() {
         if ($(this).next().css('display') == 'none') {
             //console.log('show');
             $(this).next().css({'display':'block'});
-            if (window_collapse.matches) {
-                $(this).css({'color':'black'});
-            }
         } else {
             //console.log('hide');
             $(this).next().css({'display':'none'});
-            if (window_collapse.matches) {
-                $(this).css({'color':'white'});
-            }
         }
         
     });
@@ -43,28 +37,20 @@ function menu_collapse() {
         if ((!$container.is(event.target) && !$container.has(event.target).length) && (!$menu.is(event.target) && !$menu.has(event.target).length)) {
             //console.log("doc hide");
             $container.css({'display':'none'});
-            $subMenu.css({'color':'white'});
         }
     });
 
-    // fix sticky font colors
-
-    if (window_collapse.matches) {
-        $subMenu.hover(function(){
-            $(this).css({'color':'black'});
-            $(this).parent().css({'background-color':'#ffd4bd'});
-        }, function() {
-            $(this).css({'color':'white'});
-            $(this).parent().css({'background-color':'#ec743c'});
-        });
-        $subMenu.focusin(function(){
-            $(this).css({'color':'black'});
-            $(this).parent().css({'background-color':'#ffd4bd'});
-        }).focusout( function() {
-            $(this).css({'color':'white'});
-            $(this).parent().css({'background-color':'#ec743c'});
-        });
-    }
+    // fix sticky colors
+    $subMenu.hover(function(){
+        $(this).parent().css({'background-color':'#ffd4bd'});
+    }, function() {
+        $(this).parent().css({'background-color':'#ec743c'});
+    });
+    $subMenu.focusin(function(){
+        $(this).parent().css({'background-color':'#ffd4bd'});
+    }).focusout( function() {
+        $(this).parent().css({'background-color':'#ec743c'});
+    });
 }
 
 // change direction of caret  
